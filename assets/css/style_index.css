@@ -1,0 +1,119 @@
+body {
+	margin: 0px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#header {
+	background: #15284B;
+
+	padding-left: 65px;
+	padding-right: 65px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+#header_underline {
+	height: 25px;
+	width: 100%;
+
+	background: #FDB515;
+}
+
+#title {
+	font-size: 30px;
+	text-decoration: underline;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+}
+
+#links {
+	color: white;
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 30px;
+
+	width: 80%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+#academics, #about_me {
+	transition-duration: 2s;
+}
+
+#academics:hover, #about_me:hover {
+	cursor: pointer;
+	color: #FDB515;
+	text-decoration: underline;
+}
+
+#title:hover {
+	cursor: pointer;
+}
+
+#content {
+	position: fixed;
+
+	background-color: white;
+
+	padding-bottom: 30px;
+	padding-right: 40px;
+	padding-left: 40px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+#bear {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding-right: 25px;
+}
+#lone_bear {
+	width: 97%;
+
+	border-style: double;
+	border-width: 10px;
+	border-color: #FDB515;
+}
+
+#bear-text {
+	text-align: center;
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 27px;
+
+	transition-duration: 1s;
+}
+
+#main-text {
+	padding-left: 25px;
+	
+	font-size: 40px;
+	font-family: 'Indie Flower', cursive;
+}
+
+#bear:hover #bear-text {
+	color: #15284B;
+    text-shadow: -1px 0 #FDB515, 0 1px black, 1px 0 #FDB515, 0 -1px #FDB515;
+}
+
+/* I was able to achieve the smooth transition with the help of the internet from:
+   https://stackoverflow.com/questions/19579340/css-transition-after-a-pseudo-element-how-to-transition-content-that-shows-o */
+
+#dash:after {
+	content: "A fellow peer";
+    opacity: 0%;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+#dash:hover:after {
+	opacity: 100%;
+}

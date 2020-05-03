@@ -1,0 +1,80 @@
+body {
+	margin: 0px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#header {
+	background: #15284B;
+
+	padding-left: 65px;
+	padding-right: 65px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+#header_underline {
+	height: 25px;
+	width: 100%;
+
+	background: #FDB515;
+}
+
+#title {
+	font-size: 30px;
+	text-decoration: underline;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+}
+
+#links {
+	color: white;
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 30px;
+
+	width: 80%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#academics, #about_me {
+	transition-duration: 2s;
+}
+
+#about_me:hover, #academics:hover {
+	cursor: pointer;
+	color: #FDB515;
+	text-decoration: underline;
+}
+
+#title:hover {
+	cursor: pointer;
+}
+
+#content {
+	position: fixed;
+
+	background-color: white;
+
+	padding-bottom: 30px;
+	padding-right: 200px;
+	padding-left: 200px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#text {
+	font-size: 29px;
+	font-family: 'Prompt', sans-serif;
+
+	line-height: 2;
+}
